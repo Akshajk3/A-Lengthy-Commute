@@ -45,8 +45,6 @@ public class PickupController : MonoBehaviour
 
             float mouseWheel = Input.GetAxis("Mouse ScrollWheel");
 
-            print(distance);
-
             if (mouseWheel < 0 && distance > minDistance)
                 holdArea.position = Vector3.MoveTowards(holdArea.position, gameObject.transform.position, 0.1f);
             if (mouseWheel > 0 && distance < maxDistance)
